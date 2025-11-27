@@ -1,0 +1,37 @@
+.SearchBox {
+    width: 100%;
+    max-width: 800px;
+}
+
+.SearchBox form {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    align-items: stretch;
+}
+
+.error-message {
+    color: #ff6b6b;
+    font-weight: 700;
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 12px;
+    background: rgba(255, 107, 107, 0.1);
+    border-radius: 12px;
+    border: 2px solid rgba(255, 107, 107, 0.3);
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-8px); }
+    75% { transform: translateX(8px); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .SearchBox {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
